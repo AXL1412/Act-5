@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ACT5</string>
+    <string name="app_name">jefemaestro</string>
     <string name="label_categoria">Categoría</string>
     <string name="label_fecha">Fecha</string>
     <string name="label_hora">Hora</string>
@@ -15,5 +15,13 @@
         <item>Personal</item>
         <item>Salud</item>
     </string-array>
+
+    <!-- Strings para Jefemaestro -->
+    <string name="scene1_title">Desembarco en el Anillo</string>
+    <string name="scene1_description">Aquí estoy, en el borde de lo desconocido. Este anillo... guarda secretos antiguos y peligros que la humanidad apenas puede concebir. Mi misión: descubrir la verdad, sin importar el costo.</string>
+    <string name="scene1_button_text">Viajar a la Batalla</string>
+    <string name="scene2_title">Batalla en el Amanecer</string>
+    <string name="scene2_description">El Amanecer fue solo una de muchas batallas. Este anillo... es un campo de exterminio y una esperanza. Cada enfrentamiento es una prueba, cada victoria, un respiro antes de la siguiente tormenta. El Covenant no descansará, y yo tampoco.</string>
+    <string name="scene2_button_text">Volver al Anillo</string>
 
 </resources>

@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.poutividad.act5"
+    namespace = "com.poutividad.jefemaestro"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.poutividad.act5"
-        minSdk = 24
-        targetSdk = 36
+        applicationId = "com.poutividad.jefemaestro"
+        minSdk = 21
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

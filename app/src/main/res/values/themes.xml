@@ -1,9 +1,31 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.ACT5" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.MasterChief" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:windowBackground">@color/mc_bg_dark</item>
+        <!-- For Material3 components -->
+        <item name="colorPrimary">@color/mc_green</item>
+        <item name="colorPrimaryVariant">@color/mc_green_dark</item>
+        <item name="colorOnPrimary">@color/mc_text</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/mc_gold</item>
+        <item name="colorSecondaryVariant">@color/mc_gold</item> <!-- Or a darker gold if available -->
+        <item name="colorOnSecondary">@color/mc_black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="materialButtonOutlinedStyle">@style/Widget.App.Button.OutlinedButton</item>
+        <item name="materialButtonTonalStyle">@style/Widget.App.Button.TonalButton</item>
     </style>
 
-    <style name="Theme.ACT5" parent="Base.Theme.ACT5" />
+    <style name="Widget.App.Button.OutlinedButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.App.Button.TonalButton" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:textAllCaps">false</item>
+    </style>
 </resources>

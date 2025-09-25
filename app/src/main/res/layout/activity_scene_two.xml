@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mc_gradient"
+    tools:context=".SceneTwoActivity">
+
+    <ImageView
+        android:id="@+id/image_scene"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mc_escene2" 
+        android:transitionName="scene_image_transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/scene2_title"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textColor="@color/mc_text"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/image_scene"
+        app:layout_constraintStart_toStartOf="@+id/image_scene"
+        app:layout_constraintTop_toBottomOf="@+id/image_scene" />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/scene2_description"
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:textColor="@color/mc_text"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/text_title"
+        app:layout_constraintStart_toStartOf="@+id/text_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_navigate"
+        style="?attr/materialButtonTonalStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/scene2_button_text"
+        android:textColor="@color/mc_text"
+        app:backgroundTint="@color/mc_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text_description"
+        app:layout_constraintStart_toStartOf="@+id/text_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
